@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfollio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="https://kit.fontawesome.com/0fcadd66ce.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="image/logo.png" class="logo" />
+          <ul id="sidemenu">  
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+      <div class="header-text">
+        <p>Python Developer</p>
+        <h1>Hi, I'm <span>Nikhil Pandey</span><br />from Faridabad</h1>
+      </div>
+    <!-- ----------ABOUT---------- -->
+    <div id="about">
+      <div class="container">
+          <div class="row">
+              <div class="about-col-1">
+                  <img src="image/my_image.png">
+              </div>
+              <div class="about-col-2">
+                  <h1 class="sub-title">About Me</h1>
+                  <p>Python enthusiast with a focus on Artificial Intelligence and
+                      Machine Learning. My 92% in 12th grade reflects dedication and a
+                      thirst for knowledge. Excited to explore the limitless potential
+                      of AI and ML, I aim to create innovative solutions that
+                      positively impact our world. Let's collaborate and create a
+                      brighter future through technology.</p>
+                  <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                      <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                      <p class="tab-links" onclick="openTab('education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                      <ul>
+                          <li><span>Python Development</span><br>Python/Python Advanced</li>
+                          <li><span>Web Development</span><br>Web app Development</li>
+                          <li><span>Mathematics</span><br>Linear Algebra/Statistics</li>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="experience">
+                      <ul>
+                          <li><span>2023 - Current</span><br>Machine Learning/Django</li>
+                          <li><span>2022 - 2023</span><br>Python 5 Star in Hackerrank</li>
+                          <li><span>2021-2022</span><br>Qualify JEE exam</li>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                      <ul>
+                          <li><span>2022 - Current</span><br>M.D.U B.tech(AI & ML)</li>
+                          <li><span>2021</span><br>Class 12th with 92.4%</li>
+                          <li><span>2019</span><br>Class 10th Math Marks=95</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- ----------SERVICES---------- -->
+    <div id="services">
+      <div class="container">
+          <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                  <i class="fa-solid fa-file-excel"></i>
+                    <h2>Excel Data Management</h2>
+                    <p>Harnessing Python and openpyxl, I streamline Excel workflows by automating tasks like error correction, data transformation, and report generation. Make your data tasks efficient and accurate.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                  <i class="fa-brands fa-python"></i>
+                    <h2>Python Data Analysis</h2>
+                    <p>With Python, Pandas, and NumPy, I delve into data to extract valuable insights. From trend identification to basic predictive analysis, I help you make informed decisions.</p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                    <h2>Django Web Development</h2>
+                    <p>Experience in crafting web solutions using Django, HTML, and CSS. I've created a dynamic pizza ordering website. Prioritizing user experience and functionality, I bring your ideas to life.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------PORTFOLIO--------- -->
+    <div id="portfolio">
+      <div class="container">
+          <h1 class="sub-title">My Works</h1>
+          <div class="work-list">
+              <div class="work">
+                  <img src="image/work1.png" alt="">
+                  <div class="layer">
+                      <h2>Transaction ID Fixing</h2>
+                      <p>I automated the correction of erroneous prices in a dataset using Python and openpyxl. By identifying and updating accurate prices in a new column, I enhanced data accuracy and streamlined processes effectively.</p>
+                      <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="image/work2.png" alt="">
+                  <div class="layer">
+                      <h2>Music Recommender Analysis</h2>
+                      <p>Using Python and pandas, I analyzed music preferences by age group" Visualizing insights with a dot graph, I offered a clear overview of age-wise song trends, showcasing my data analysis and visualization skills.</p>
+                      <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="image/work3.png" alt="">
+                  <div class="layer">
+                      <h2>Django Pizza Website</h2>
+                      <p>I created an interactive pizza ordering website with Django, HTML, and CSS. Through seamless user interactions, real-time updates, and a focus on functionality, I demonstrated my web development expertise in crafting engaging solutions.</p>
+                      <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+              </div>
+          </div>
+          <a href="" class="btn">See more</a>
+      </div>
+  </div>
+
+
+    <!-- ----------CONTACT---------- -->
+    <div id="contact">
+      <div class="container">
+          <div class="row">
+              <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p><i class="fa-solid fa-envelope"></i> npqwerty93@gamil.com</p>
+                  <p><i class="fa-solid fa-phone"></i> 7678496928</p>
+                  <div class="social-icons">
+                      <a href="https://www.linkedin.com/in/nikhil-pandey-05288b247"><i class="fa-brands fa-linkedin"></i></i></a>
+                      <a href="https://www.codechef.com/users/nikh27"><i class="fa-solid fa-closed-captioning"></i></a>
+                      <a href="https://instagram.com/nikhilpandey351?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-square-instagram"></i></a>
+                      <a href="https://instagram.com/nikhilpandey351?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-hackerrank"></i></a>
+                  </div>
+                  <a href="cv banunga" download class="btn btn2">Download CV</a>
+              </div>
+              <div class="contact-right">
+                  <form>
+                      <input type="text" name="Name" placeholder="Your Name" required>
+                      <input type="email" name="Email" placeholder="Your Email" required>
+                      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                      <button type="submit" class="btn btn3">submit</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>copyright @Panda. Made with <i class="fas fa-heart"></i> by Nikhil Pandey</p>
+      </div>
+  </div>
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      function openTab(tabName) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
+     
+     <script>
+      var sidemenu = document.getElementById("sidemenu")
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+
+
+     </script>
+  </body>
+</html>
